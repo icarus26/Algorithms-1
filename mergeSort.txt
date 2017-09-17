@@ -1,9 +1,8 @@
 
-								
-							 						
+													 						
 										 DIVIDE AND CONQUER :::
 
-							 Divide : Array -> 2 sub arrays of eqaul size
+							 Divide : Array into 2 sub arrays of eqaul size
 							 Conquer : Recurssive call on both sub-array
 							 Combine : Merging of 2 sorted arrays.
 
