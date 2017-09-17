@@ -1,4 +1,0 @@
-					BUBBLE SORT
-
-		1.) Compare the adjacent elements and swap them accodingly.
-		2.) Keep doing this until their is no swap in an iteration.
