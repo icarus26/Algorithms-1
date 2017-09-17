@@ -1,3 +1,3 @@
 # Algorithms-1
-This repository includes codes of basic algorithms and data structures.
-Also, .py files are the executible files and .txt files contains ideas or pseudo-code of the algorithms.
+This repository includes codes of basic algorithms and data structures that are covered at institutional level.
+Codes are written in python and .txt files contains ideas or pseudo-code of the algorithms.
