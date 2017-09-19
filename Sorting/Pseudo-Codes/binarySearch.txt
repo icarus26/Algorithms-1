@@ -19,7 +19,7 @@
 
 		PSEUDO-CODE ::
 
-		binarySearch(A[p....q], key)
+		binarySearch(A[p....q], key, p, q)
 		
 		m <- (p + (q-1))/2
 		
@@ -36,9 +36,9 @@
 		# Recurrence relation
 
 		if key < A[m]
-			binarySearch( L, key)
+			binarySearch( L, key, p, m)
 		else 
-			binarySearch(R, key)
+			binarySearch(R, key, m+1, q)
 
 
 
