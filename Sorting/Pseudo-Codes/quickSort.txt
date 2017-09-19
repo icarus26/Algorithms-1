@@ -1,0 +1,69 @@
+									PSEUDO CODE FOR QUICK SORT :::
+
+
+				Partition ::
+
+		partition(A, p, q) # A[p.....q] # THIS PLACES ALL THE ELEMENTS WHICH ARE LESS THAN PIVOT TO THE LEFT OF PIVOT AND REST ON THE RIGHT
+
+		x = A[p]  # Pivot
+		i <- p
+		for j<-p+1 to q
+			do {
+				if A[j] <= x
+					then i <- i+1
+						exchange A[i] and A[j]
+		exchange A[p] and A[i]
+		return i
+
+		quickSort ::
+
+		quickSort(A, p, q) # A[p......q] ; only if p < q
+
+			r <- partition(A, p, q)
+
+			quickSort(A, p, r-1)
+			quickSort(A, r+1, q)
+
+		Init: quickSort(A, 1, n) # Initial condition
+
+===============================================================================================================================================================================
+
+		ALGORITHM :: 	DIVIDE AND CONQUER
+
+		Divide : Partition into 2 sub-arrays one less than pivot, another greater than pivot.
+		Conquer : Recursively apply quickSort on each of the sub-arrays.
+		Combine : Trivial (Nothing to be done)
+		
+		EXPLAINATION ::: 
+
+	This sorting algorithm uses the idea of divide and conquer.
+
+	It finds the element called the PIVOT which divides the array into two parts in such a way that
+	elements in the left half are smaller than the pivot and elements in the right are greater than pivot.
+
+
+	We recursively perform three steps:
+
+	1.) Bring the pivot to its apropiate position such that left of the pivot is smaller and right is greater.
+	2.) Quick sort the left part.
+	3.) Quick sort the right part.
+
+
+	PARTITION ::
+
+	counter variables:
+	i == index of smaller element ( set it equal to -1)
+	j == loop variable
+
+	test condition: 
+	arr[J] <= pivot
+		if true then,
+			i++
+			swap(arr[i], arr[j])
+		else no action
+
+	before last swap we come out of the loop and swap arr[i+1] and pivot
+
+	Now we can call quick sort to the left half:
+
+	and then in right half
