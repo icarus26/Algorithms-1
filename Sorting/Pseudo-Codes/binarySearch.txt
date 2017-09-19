@@ -36,7 +36,7 @@
 		# Recurrence relation
 
 		if key < A[m]
-			binarySearch( L, key, p, m)
+			binarySearch( L, key, p, m-1)
 		else 
 			binarySearch(R, key, m+1, q)
 
