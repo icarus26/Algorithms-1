@@ -1,0 +1,44 @@
+				BINARY SEARCH : Divide and Conquer 
+
+
+		Divide :: Compare key with A[n/2]
+		Conquer :: Recurse into left or right sub-array
+		Combine :: Trivial
+
+
+		Idea :: 
+
+		We need a sorted array to apply binary search.
+
+		First, we take a sorted array and divide it into two halves.
+		Then we check if the middle element is equal to the key or not.
+		If not, then, 
+			if the key is smaller than middle elememt we apply the binary search in the left half
+			otherwise, right half.
+
+
+		PSEUDO-CODE ::
+
+		binarySearch(A[p....q], key)
+		
+		m <- (p + (q-1))/2
+		
+		
+		# Dividing the array into two halves
+		
+		L[] = A[p....m]
+		R[] = A[m+1....q]
+
+		# Base Case
+
+		if A[m] = key
+			return
+		# Recurrence relation
+
+		if key < A[m]
+			binarySearch( L, key)
+		else 
+			binarySearch(R, key)
+
+
+
