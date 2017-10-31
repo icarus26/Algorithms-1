@@ -1,7 +1,8 @@
-# Python program for implementation of Merge Sort
-# l is left index, m is middle index and r is right index
-# L[l...m] and R[m+1.....r] are respective left and right sub-arrays
-
+'''
+Python program for implementation of Merge Sort
+l is left index, m is middle index and r is right index
+L[l...m] and R[m+1.....r] are respective left and right sub-arrays
+'''
 
 def merge(arr, l, m, r):
 		n1 = m - l + 1
