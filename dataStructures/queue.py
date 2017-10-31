@@ -1,3 +1,4 @@
+# Making of queue data structure
 class Queue:
 
 	def __init__(self):
