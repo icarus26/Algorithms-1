@@ -12,7 +12,7 @@ def binarySearch(arr, l, r, x):
         if arr[mid] == x:
             return mid
 
-        # If element is smaller than mid, then it can only 
+        # If element is smaller than middle, then it can only 
         # be present in left sub-array
         elif arr[mid] > x:
             return binarySearch(arr, l, mid-1, x)
