@@ -1,5 +1,5 @@
 def karatsuba(x,y):
-	# Function to multiply 2 numbers in a more efficent manner.
+	# Function to multiply 2 numbers in a more efficent manner
 		if len(str(x)) == 1 or len(str(y)) == 1:
 			return x*y
 		else:
