@@ -1,7 +1,8 @@
-# Python program to introduce Binary Tree
- 
-# A class that represents an individual node in a
-# Binary Tree
+'''
+Python program to introduce Binary Tree
+A class that represents an individual node in a
+Binary Tree
+'''
 class Node:
     def __init__(self,key):
         self.left = None
