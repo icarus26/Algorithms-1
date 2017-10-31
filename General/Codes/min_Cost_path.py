@@ -8,7 +8,7 @@ def minCost(cost, m, n):
     # Instead of following line, we can use int tc[m+1][n+1] or
     # dynamically allocate memoery to save space. The following
     # line is used to keep te program simple and make it working
-    # on all compilers.
+    # on all compilers
     tc = [[0 for x in range(C)] for x in range(R)]
  
     tc[0][0] = cost[0][0]
